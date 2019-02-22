@@ -1,4 +1,4 @@
-package com.abstrac.gateway;
+package com.abstrac.ui;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class GatewayApplicationTests {
+public class UiApplicationTests {
 
 	@Test
 	public void contextLoads() {

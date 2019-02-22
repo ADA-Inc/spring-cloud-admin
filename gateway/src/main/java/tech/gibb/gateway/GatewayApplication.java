@@ -1,4 +1,4 @@
-package tech.gibb.gateway;
+package com.abstrac.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -43,8 +43,6 @@ public class GatewayApplication {
 						.uri("lb://ui"))
 				.route("ui", p -> p.path("/").or().path("/css/**").or().path("/js/**")
 						.uri("lb://ui"))
-				.route("monolith", p -> p.path("/**")
-						.uri("http://localhost:8081"))
 				.build();
 	}
 
